@@ -1,0 +1,35 @@
+[
+{
+"id":1,
+"email":"reunierprospere@gmail.com",
+"password":"reunier123",
+"account":{
+  "type":"VISA CARD",
+  "service": "Donation ",
+ "balance":120.000,
+  "desposit":0,
+  "montant":120.000,
+  "status":"activé"
+}
+  
+},
+{
+  "email": "m3bunning@gmail.com",
+  "name": "Monika",
+ "prenom": "Bunning",
+  "pays": "Allemangne",
+  "currency": "€",
+  "typeofCompte": "donation",
+  "tot_amount": 120000,
+  "tot_deposit": 680,
+  "status": 430,
+  "duree": 2,
+  "assurance": 100,
+  "contrat": "Acte Donation",
+  "cardBank": {
+    "iban": "DEGHKG56713584",
+    "bic": "AXJR456JklZryMK",
+    "bankName": "BNP Paribas Fortis "
+  }
+}
+]
