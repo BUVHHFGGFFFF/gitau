@@ -1,31 +1,39 @@
 [
 {
-"id":1,
-"email":"reunierprospere@gmail.com",
-"password":"reunier123",
-"account":{
-  "type":"VISA CARD",
-  "service": "Donation ",
- "balance":120.000,
-  "desposit":0,
-  "montant":120.000,
-  "status":"activé"
-}
-  
+"email": "reunierprospere@gmail.com",
+  "name": "Reunier",
+  "password":"reunier123#",
+ "prenom": "Prospere",
+  "pays": "Ecuador",
+  "currency": "$",
+  "typeofCompte": "Prêt",
+  "tot_amount": 2000,
+  "tot_deposit": 0,
+  "status": 300,
+  "duree": 2,
+  "assurance": 0,
+  "contrat": "Contrat de Prêt",
+  "cardBank": {
+    "iban": "EC8GHKG56713584",
+    "bic": "AX46JR456JklZryMK",
+    "bankName": "BNP Paribas Fortis "
+  }
 },
+
 {
   "email": "m3bunning@gmail.com",
   "name": "Monika",
+  "password":"pass123#",
  "prenom": "Bunning",
   "pays": "Allemangne",
   "currency": "€",
-  "typeofCompte": "donation",
+  "typeofCompte": "Donation",
   "tot_amount": 120000,
   "tot_deposit": 680,
-  "status": 430,
-  "duree": 2,
-  "assurance": 100,
-  "contrat": "Acte Donation",
+  "status": 420,
+  "duree": "",
+  "assurance": 0,
+  "contrat": "Acte de Donation",
   "cardBank": {
     "iban": "DEGHKG56713584",
     "bic": "AXJR456JklZryMK",
