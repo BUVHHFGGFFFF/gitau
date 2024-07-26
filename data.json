@@ -34,6 +34,7 @@
   "status": 420,
   "duree": "",
   "assurance": 0,
+  "bankInter":1,
   "contrat": "Acte de Donation",
   "cardBank": {
     "iban": "DEGHKG56713584",
