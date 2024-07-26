@@ -12,10 +12,11 @@
   "status": 300,
   "duree": 2,
   "assurance": 0,
+    "bankInter":0,
   "contrat": "Contrat de Prêt",
   "cardBank": {
-    "iban": "EC8GHKG56713584",
-    "bic": "AX46JR456JklZryMK",
+    "idAccount":"AWXEC8GHKG56713584",
+    
     "bankName": "BNP Paribas Fortis "
   }
 },
