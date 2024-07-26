@@ -11,7 +11,7 @@
   "tot_deposit": 0,
   "status": 300,
   "duree": 2,
-  "assurance": 0,
+  "assurance": 10,
     "bankInter":0,
   "contrat": "Contrat de Prêt",
   "cardBank": {
