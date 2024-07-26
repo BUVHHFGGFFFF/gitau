@@ -9,7 +9,7 @@
   "typeofCompte": "Prêt",
   "tot_amount": 2000,
   "tot_deposit": 680,
-  "status": 300,
+  "status":300,
   "duree": 2,
   "assurance": 10,
     "bankInter":0,
