@@ -8,10 +8,10 @@
   "currency": "$",
   "typeofCompte": "Prêt",
   "tot_amount": 2000,
-  "tot_deposit": 680,
+  "tot_deposit": 0,
   "status":300,
   "duree": 2,
-  "assurance": 10,
+  "assurance": 0,
     "bankInter":0,
   "contrat": "Contrat de Prêt",
   "cardBank": {
