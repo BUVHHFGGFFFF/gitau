@@ -42,4 +42,26 @@
     "bankName": "BNP Paribas Fortis "
   }
 }
+  ,{
+  "email": "ralfyralfy123@.com",
+  "name": "Ralfy",
+  "password": "ralfy123#",
+  "prenom": "Rutkovskis",
+  "pays": "Lavija",
+  "currency": "€",
+  "typeofCompte": "Prêt",
+  "tot_amount":2000,
+  "tot_deposit": 0,
+  "status": 300,
+  "duree": 6,
+  "assurance": 0,
+  "contrat": "Acte de Donation",
+  "bankInter": 0,
+  "cardBank": {
+
+    "id": "LV27HABA0551055338904",
+    
+    "bankName": "BNP Paribas Fortis "
+  }
+  }
 ]
