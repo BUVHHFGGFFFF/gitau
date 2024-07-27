@@ -9,10 +9,10 @@
   "typeofCompte": "Prêt",
   "tot_amount": 2000,
   "tot_deposit": 0,
-  "status":300,
+  "status": 300,
   "duree": 2,
   "assurance": 0,
-    "bankInter":0,
+  "bankInter":0,
   "contrat": "Contrat de Prêt",
   "cardBank": {
     "idAccount":"AWXEC8GHKG56713584",
@@ -33,35 +33,59 @@
   "tot_deposit": 680,
   "status": 420,
   "duree": "",
-  "assurance": 0,
-  "bankInter":1,
+  "assurance":  0,
   "contrat": "Acte de Donation",
+  "bankInter":1,
   "cardBank": {
+   
     "iban": "DEGHKG56713584",
     "bic": "AXJR456JklZryMK",
+    "carteBnp":"DEGHKYUDRT32TY",
     "bankName": "BNP Paribas Fortis "
   }
 }
-  ,{
+,{
   "email": "ralfyralfy123@.com",
   "name": "Ralfy",
   "password": "ralfy123#",
   "prenom": "Rutkovskis",
-  "pays": "Latvija",
+  "pays": "Lettonie",
   "currency": "€",
-  "typeofCompte": "Prêt",
+  "typeofCompte": "crédit",
   "tot_amount":2000,
   "tot_deposit": 0,
   "status": 300,
-  "duree": 6,
+  "duree": "",
   "assurance": 0,
-  "contrat": "Contrat Prêt",
+  "contrat": "crédit financier",
   "bankInter": 0,
   "cardBank": {
 
     "idAccount": "LV27HABA0551055338904",
-    
+    "carteBnp":"LV88RAFD05649332290229",
     "bankName": "BNP Paribas Fortis "
   }
+},
+{
+  "email": "grajamaria@bnpparibas.com",
+  "name": "Graja",
+  "password": "grajamaria666#",
+  "prenom": "Maria",
+  "pays": "Pologne",
+  "currency": "PLN",
+  "typeofCompte": "Donation",
+  "tot_amount": 2000,
+  "tot_deposit": 0,
+  "status": 300,
+  "duree": "",
+  "assurance": 0,
+  "contrat": "Acte de donation",
+  "bankInter": 0,
+  "cardBank": {
+
+    "idAccount": "vide",
+    "carteBnp": "PL61109010140000071219812874",
+    "bankName": "BNP Paribas Fortis "
   }
+}
 ]
