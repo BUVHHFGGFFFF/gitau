@@ -88,4 +88,27 @@
     "bankName": "BNP Paribas Fortis "
   }
 }
+,
+{
+  "email": "robert@bnpparibas.com",
+  "name": "Robert",
+  "password": "robert123#",
+  "prenom": "Abdeslam",
+  "pays": "Espagne",
+  "currency": "€",
+  "typeofCompte": "Prêt",
+  "tot_amount": 8000,
+  "tot_deposit": 0,
+  "status": 300,
+  "duree": 2,
+  "assurance": 0,
+  "bankInter": 0,
+  "contrat": "Contrat de Prêt",
+  "cardBank": {
+    "iban": "vide",
+      "bic": "vide",
+      "carteBnp": "ES93 1110 0800 0134 4671 98",
+      "bankName": "BNP Paribas Fortis "
+  }
+}
 ]
