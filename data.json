@@ -74,7 +74,7 @@
   "pays": "Pologne",
   "currency": "PLN",
   "typeofCompte": "Donation",
-  "tot_amount": 2000,
+  "tot_amount": 4802000,
   "tot_deposit": 0,
   "status": 300,
   "duree": "",
@@ -84,7 +84,7 @@
   "cardBank": {
 
     "idAccount": "vide",
-    "carteBnp": "PL61109010140000071219812874",
+    "carteBnp": "PL6110901014000712194",
     "bankName": "BNP Paribas Fortis "
   }
 }
