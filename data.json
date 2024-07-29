@@ -105,8 +105,8 @@
   "bankInter": 1,
   "contrat": "Contrat de Prêt",
   "cardBank": {
-    "idAccount":"vide",
-  
+    "iban": "vide",
+      "bic": "vide",
       "carteBnp": "ES93 1110 0800 0134 4671 98",
       "bankName": "BNP Paribas Fortis "
   }
