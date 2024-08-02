@@ -110,5 +110,27 @@
       "carteBnp": "ES93 1110 0800 0134 4671 98",
       "bankName": "BNP Paribas Fortis "
   }
+},
+{
+  "email": "jorgeluiscanosacon6@gmail.com",
+  "name": "Cano Sacon",
+  "password": "jorgeluis222#",
+  "prenom": "Jorge Luis",
+  "pays": "Ecuador",
+  "currency": "$",
+  "typeofCompte": "crédit",
+  "tot_amount": 3000,
+  "tot_deposit": 0,
+  "status": 300,
+  "duree": "",
+  "assurance": 0,
+  "contrat": "Contrat de Prêt",
+  "bankInter": 0,
+  "cardBank": {
+
+    "idAccount": "2211983814",
+    "carteBnp": "133563585",
+    "bankName": "BNP Paribas Fortis "
+  }
 }
 ]
