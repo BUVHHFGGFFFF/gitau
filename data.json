@@ -118,8 +118,8 @@
   "prenom": "Jorge Luis",
   "pays": "Ecuador",
   "currency": "$",
-  "typeofCompte": "credito",
-  "iscredit":"1";
+  "typeofCompte": "1",
+  "iscredit":"1",
   "tot_amount": 3000,
   "tot_deposit": 0,
   "status": 300,
