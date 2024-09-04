@@ -117,25 +117,44 @@
   }
 },
 {
-  "email": "jorgeluiscanosacon6@gmail.com",
-  "name": "Cano Sacon",
-  "password": "jorgeluis222#",
-  "prenom": "Jorge Luis",
-  "pays": "Ecuador",
+  "email": "clebercarreiro321@gmail.com",
+  "name": " Cleber",
+  "password": "cleber222#",
+  "prenom": "José Carreiro",
+  "pays": "Brazil",
   "currency": "$",
-  "typeofCompte": "credito",
+  "typeofCompte": "crédit",
   "iscredit":"1",
-  "tot_amount": 3000,
+  "tot_amount": 20000,
   "tot_deposit": 0,
   "status": 300,
   "duree": "",
   "assurance": 0,
-  "contrat": "Contrato de credito",
+  "contrat": "Contrat de crédit",
   "bankInter": 0,
   "cardBank": {
 
-    "idAccount": "2211983814",
+    "idAccount": "citizen bank",
     "carteBnp": "133563585",
+    "bankName": "BNP Paribas Fortis "
+  },
+    "name": "Reunier",
+  "password":"reunier123#",
+ "prenom": "Prospere",
+  "pays": "Ecuador",
+  "currency": "$",
+  "typeofCompte": "credit",
+  "tot_amount": 2000,
+  "iscredit":"1",
+  "tot_deposit": 0,
+  "status": 300,
+  "duree": 2,
+  "assurance": 0,
+  "bankInter":0,
+  "contrat": "Contrat de Prêt",
+  "cardBank": {
+    "idAccount":"AWXEC8GHKG56713584",
+    "carteBnp":"RGDGDSG52667TZTYSY",
     "bankName": "BNP Paribas Fortis "
   }
 }
